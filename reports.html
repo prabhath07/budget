@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgeteer</title>
+    <link  rel="stylesheet" href="Style.css" >
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+<body >
+  <div class='homescreen'>
+    <div class="navigation">
+      <div class="title">
+        <div>
+        <ion-icon name="analytics-outline" class="size"></ion-icon> 
+
+        </div>
+        <div class="text">
+          MY FINANCES
+        </div>
+      
+
+      </div>
+      <div class="title2">
+        <ion-icon name="albums-outline"></ion-icon>
+        <div class="text">
+            <a href='./index.html'>Overview</a> 
+
+        </div>
+       
+
+      </div>
+      <div class="title2">
+        <ion-icon name="card-outline"></ion-icon>
+        <div class="text">
+         <a href="./expenses.html"> Expenses</a>
+        </div>
+       
+      </div>
+      <div class="title2">
+        <ion-icon name="clipboard-outline"></ion-icon>
+        <div class="text">
+         <a href='./reports.html'> Reports</a>
+        </div>
+  </div>
+
+        <div class="title2">
+        <ion-icon name="bar-chart-outline"></ion-icon>
+
+          <div class="text">
+          <a href="./transactions.html"> Transactions</a> 
+          </div>
+      </div>
+      <div class="title2">
+        <ion-icon name="notifications-sharp"></ion-icon>
+          <div class="text">
+           <a href="./notifications.html"> Notifications</a>
+          </div>
+      </div>
+
+ </div>
+
+
+    <div class="stats2">
+      <div class="statstitle">
+      <span>
+         Reports
+      </span>
+      </div>
+     <div class="report">
+<h4>
+    liquid balance last year
+</h4>
+<div class="cha">
+    <img src = './images/1.png' id="img" style="max-width: 70%;">
+    <div class="drop">
+        <select name="Time" id="image" class="dropdown" onchange="imgchange(event.target.value)" >
+            <option onclick="imgchange" value='1' >Last Year</option>
+            <option onclick="imgchang" value='2'>Last Month</option>
+            <script>
+               function imgchange(str){
+                   if(str=='1'){
+                    document.getElementById("img").src = "./images/1.png";
+
+                   }
+                   else{
+                    document.getElementById("img").src = "./images/6.png";
+
+
+                   }
+               }
+               
+            
+            </script>
+            
+          </select>
+    </div>
+</div>
+
+<div class="charts2">
+    
+    <img src='./images/2.png' class="img3">
+    <img src="./images/4.png" class="img4">
+</div>
+
+</div>
+</div>
+
+</div>
+</body>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</html>
